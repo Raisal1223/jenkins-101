@@ -5,7 +5,7 @@ pipeline {
             }
       }
     triggers {
-        pollSCM '* * * * *'
+        pollSCM 'H * * * *'
     }
     stages {
         stage('Build') {
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 echo 'Deliver....'
                 sh '''
-                echo "doing delivery stuff.."
+                echo "Delivery is almost over" > README.txt
                 '''
             }
         }
