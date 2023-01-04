@@ -31,9 +31,10 @@ pipeline {
             steps {
                 echo 'Deliver....'
                 sh '''
-                echo "Delivery is almost over" > README.txt
+                cd myapp
+                echo "file has landed" > README.txt
+                ls -l
                 '''
-                ls
             }
         }
     }
