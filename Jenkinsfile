@@ -33,6 +33,7 @@ pipeline {
                 sh '''
                 echo "Delivery is almost over" > README.txt
                 '''
+                ls
             }
         }
     }
